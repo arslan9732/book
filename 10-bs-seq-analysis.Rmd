@@ -66,7 +66,7 @@ tab
 Most of the time bisulfite sequencing experiments have test and control  samples. The test samples can be from a disease tissue while the control  samples can be from a healthy tissue. You can read a set of methylation call files that have test/control conditions giving a `treatment` vector option. The treatment vector defines the sample groups and it is very important for the differential methylation analysis. For the sake of subsequent analysis, file.list, sample.id and treatment option should have the same order. In the following example, the first two files have the sample IDs "test1" and "test2" and as determined by the treatment vector they belong to the same group. The third and fourth files have sample IDs "ctrl1" and "ctrl2" and they belong to the same group as indicated by the treatment vector. We will first get a list of file paths and have a look at the content.
 
 
-```{r readMethFiles,message=FALSE,echo=FALSE}
+```{r readMethFiles}
 library(methylKit)
 file.list=list( system.file("extdata", 
                             "test1.myCpG.txt", package = "methylKit"),
